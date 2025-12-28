@@ -54,7 +54,7 @@ span {
 
 .header {
   color: #ffffff;
-  min-height: 40%;
+  min-height: 40vh;
 }
 
 .header .index {
@@ -123,12 +123,80 @@ span {
 
 .content {
   background-color: #ffffff;
-  min-height: 50%;
+  min-height: 100vh;
   padding: 30px;
 }
+
+.content table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.content table thead th {
+  padding: 10px;
+  background-color: #3288b9;
+}
+
+.content table tbody td {
+  padding: 10px;
+}
+
+.content table tbody tr:nth-child(even) td {
+  background-color: #e6e6e6;
+}
+
+.content table tfoot td {
+  padding: 10px;
+  background-color: #5ce1e6;
+}
+
+.content .fieldset-duas-colunas {
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  border-color: #f9f9f9;
+}
+
+.content .fieldset-duas-colunas .coluna {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .fieldset-duas-colunas .row {
+  margin: 5px;
+}
+
+.content .fieldset-duas-colunas label {
+  margin-bottom: 5px;
+}
+
+.content .fieldset-duas-colunas label sup {
+  color: #ff0000;
+}
+
+.content .fieldset-duas-colunas input {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.content .fieldset-duas-colunas .botao {
+  background-color: #3288b9; /* Verde */
+  color: #ffffff; /* Texto branco */
+  margin-top: 5px;
+  padding: 10px 20px; /* Espaçamento interno (top/bottom, left/right) */
+  width: 150px;
+  height: 40px;
+  border: none; /* Remove a borda padrão */
+  border-radius: 8px; /* Cantos arredondados */
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 .footer {
   background-color: #3288b9;
-  min-height: 10%;
+  min-height: 10vh;
   padding: 10px 0;
   text-align: center;
 }

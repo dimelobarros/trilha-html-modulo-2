@@ -48,24 +48,68 @@
 
         <div class="content">
           <!-- Aqui vai o seu conteúdo -->
-          <h1>Entre em Contato Conosco</h1>
-          <p>📱 Telefone: (84) 3333-4444 💬 WhatsApp: (84) 9 9999-8888</p>
-          <p>
-            📍 Endereço: Rua das Flores, nº 123 Bairro Centro Natal – RN CEP:
-            59000-000
-          </p>
+          <h1>Informações de Contato</h1>
+          <p>Entre em Contato Conosco</p>
           <br />
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.792161177754!2d-35.24593022533154!3d-5.743038456737183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3aa3b9ddd7b1f%3A0x8e7aa9d40de4d7cb!2sR.%20das%20Fl%C3%B4res%2C%20123%20-%20Paju%C3%A7ara%2C%20Natal%20-%20RN%2C%2059122-420!5e0!3m2!1spt-BR!2sbr!4v1766864110190!5m2!1spt-BR!2sbr"
-              width="400"
-              height="300"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </p>
+          <form method="get">
+            <fieldset class="fieldset-duas-colunas">
+              <legend>Formulário de Contato</legend>
+              <div class="coluna">
+                <div class="row">
+                  <label for="">📱 Telefone: (84) 3333-4444</label>
+                </div>
+                <div class="row">
+                  <label for="">💬 WhatsApp: (84) 9 9999-8888</label>
+                </div>
+                <div class="row">
+                  <label for=""
+                    >📍 Endereço: Rua das Flores, nº 123 Bairro Centro Natal –
+                    RN CEP: 59000-000</label
+                  >
+                </div>
+                <div class="row">
+                  <label for=""
+                    ><iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.792161177754!2d-35.24593022533154!3d-5.743038456737183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3aa3b9ddd7b1f%3A0x8e7aa9d40de4d7cb!2sR.%20das%20Fl%C3%B4res%2C%20123%20-%20Paju%C3%A7ara%2C%20Natal%20-%20RN%2C%2059122-420!5e0!3m2!1spt-BR!2sbr!4v1766864110190!5m2!1spt-BR!2sbr"
+                      width="600"
+                      height="350"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe
+                  ></label>
+                </div>
+              </div>
+              <div class="coluna">
+                <h4>
+                  Preencha o formulário abaixo e entraremos em contato o mais
+                  breve possível
+                </h4>
+                <label for="nome">Nome:<sup>*</sup></label>
+                <input type="text" id="nome" name="nome" />
+
+                <label for="email">E-mail:<sup>*</sup></label>
+                <input type="text" id="email" name="email" />
+                <label for="assunto">Assunto:<sup>*</sup></label>
+                <input type="text" id="assunto" name="assunto" />
+                <label for="textarea">Mensagem:<sup>*</sup></label>
+                <textarea id="textarea" name="textarea" rows="10">
+Mensagem:</textarea
+                >
+                <div class="row">
+                  <button
+                    class="botao"
+                    type="submit"
+                    onclick="alert('Cliequei aqui')"
+                  >
+                    Enviar
+                  </button>
+                  <button class="botao" type="reset">Limpar</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
 
         <div class="footer">
